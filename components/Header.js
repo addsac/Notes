@@ -25,9 +25,10 @@ function Header() {
 
     if(from == 'init'){
       setActiveCategory(categories[0]);
+      
+      fetchNotes(categories[0].id);
     }
 
-    fetchNotes(categories[0].id);
   };
 
   const fetchNotes = async (categoryId) => {
